@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//paleta de colores
+$background: rgb(0, 0, 0);
+$base: rgb(82, 82, 82);
+$letra: #ffff;
+$red: rgb(232, 76, 52);
+$figcaption: rgb(174, 173, 169);
+$base-transparente: rgba(82, 82, 82, 0.87);
+
+body {
+    background-image: url(../assets/portada.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        padding-top: 4%;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .contenedor {
+        width: 300px;
+        height: 380px;
+        background-color: $base-transparente;
+        border-radius: 30px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+
+        img {
+            width: 60%;
+            margin: 0 auto;
+            padding: 1% 0 3% 0;
+        }
+
+        h1 {
+            color: $letra;
+            font-family: 'Scheherazade', serif;
+        }
+
+        label input[type=email],
+        label input[type=password] {
+            border-radius: 50px;
+            padding: 1%;
+            margin-top: 2%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        a {
+            text-decoration: none;
+            button {
+                background: #0F2027;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                padding: 1%;
+                border-radius: 50px;
+                margin-top: 3%;
+                width: 250px;
+                margin-right: auto;
+                margin-left: auto;
+                color: white;
+                font-family: 'Libre Baskerville', serif;
+                &:hover,
+                &:focus{
+                    box-shadow: 0 0.5em 0.5em -0.4em white;
+                    -webkit-transform: translateY(-0.25em);
+                    transform: translateY(-0.25em);
+                }
+            }
+        }
+
+        .link {
+            display: flex;
+            flex-direction: row;
+
+            h2 {
+                padding-top: 4%;
+                font-size: 1em;
+
+                a {
+                    color: $red;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1em;
+            padding-top: 2%;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+}
+
+//mediaqueries
+@media (min-width:768px){
+    .volver{
+        font-size: 1.5em;
+    }
+}

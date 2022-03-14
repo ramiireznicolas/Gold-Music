@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IM+Fell+English+SC&family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  padding: 3%;
+  color: #e0e0e0;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #ffff;
+  font-family: 'Scheherazade', serif;
+}
+
+p {
+  color: #ffff;
+  text-align: center;
+  padding: 3%;
+  font-family: 'Oswald', sans-serif;
+}
+
+figcaption {
+  font-size: 0.75em;
+  color: #aeada9;
+}
+
+aside {
+  display: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+  background-color: black;
+  -webkit-box-shadow: 0 0 10px 0 #525252;
+          box-shadow: 0 0 10px 0 #525252;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+header .menu {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  position: relative;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 1% 3%;
+}
+
+header .menu i {
+  color: white;
+}
+
+header .menu .drop {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: rgba(82, 82, 82, 0.87);
+  width: 550%;
+  height: 100vh;
+  padding: 2%;
+  z-index: 10;
+  top: 25px;
+  left: 1%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header .menu .drop img {
+  margin: 5%;
+  border-radius: 50px;
+  background-color: #ffff;
+}
+
+header .menu .drop h3 {
+  color: black;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7em;
+}
+
+header .menu .drop li {
+  margin: 2% auto;
+  list-style: none;
+  font-size: 1em;
+  padding: 3%;
+  color: white;
+}
+
+header .menu .drop .config {
+  padding: 5%;
+  font-size: 1em;
+  color: white;
+}
+
+header .menu .drop .salir {
+  margin-top: 10%;
+}
+
+header .menu .drop .salir a {
+  color: #e84c34;
+}
+
+header .buscador {
+  margin: auto;
+}
+
+header .buscador input[type=search] {
+  width: 220px;
+  border-radius: 15px;
+}
+
+header .buscador input[type=search]:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+header .buscador i {
+  color: white;
+}
+
+.menu:hover .drop {
+  display: block;
+}
+
+main .buscador2 {
+  display: none;
+}
+
+.masEscuchado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 3%;
+}
+
+.container img {
+  width: 70%;
+  border: 1px #525252 solid;
+}
+
+.nuevoLanzamiento img {
+  width: 80%;
+}
+
+.nuevoLanzamiento .lanzamiento {
+  padding: 3%;
+}
+
+.perfiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.perfiles .artista img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5% auto;
+  padding: 3%;
+  width: 75%;
+  background-image: url(../assets/portada.jpg);
+}
+
+.app h3 {
+  color: #eac102;
+  text-shadow: 0 0 30px #eac102;
+}
+
+.app .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.app .download a {
+  margin: auto;
+  width: 25%;
+}
+
+.app .download a img {
+  width: 100%;
+}
+
+footer {
+  padding: 5%;
+  background: #CC95C0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#7AA1D2), color-stop(#DBD4B4), to(#CC95C0));
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid black;
+  /* botones */
+}
+
+footer .contratos {
+  background-color: #e84c34;
+  padding: 2%;
+  border-bottom: 1px black solid;
+}
+
+footer .contratos h2 {
+  font-size: 1em;
+  color: #e0e0e0;
+  font-family: 'Oswald', sans-serif;
+}
+
+footer .contratos h3 {
+  font-size: 1em;
+}
+
+footer .contratos h5 {
+  font: 1.2em;
+}
+
+footer .contratos .precio {
+  font-size: 2em;
+}
+
+footer .btn2 {
+  width: 90px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #0ddada;
+  text-align: center;
+}
+
+footer .btn2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  margin: auto;
+}
+
+footer .btn2:hover {
+  background-color: #66fcfc;
+}
+
+footer .btn3 {
+  margin: 1% 0;
+  width: 90px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: black;
+}
+
+footer .btn3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+  margin: auto;
+}
+
+footer .btn3:hover {
+  background-color: #181818;
+}
+
+@media (min-width: 800px) {
+  header {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  main, footer {
+    margin-left: 30%;
+  }
+  main .buscador2, footer .buscador2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 0.5px solid #ffff;
+  }
+  main .buscador2 input[type=search], footer .buscador2 input[type=search] {
+    margin: 3%;
+    padding: 1%;
+    width: 70%;
+    border-radius: 15px;
+  }
+  main .buscador2 input[type=search]:hover, footer .buscador2 input[type=search]:hover {
+    -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
+  }
+  main .buscador2 i, footer .buscador2 i {
+    color: white;
+    margin: auto 0;
+  }
+  aside {
+    background: #0F2027;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid white;
+    text-align: center;
+    z-index: 200;
+  }
+  aside li {
+    margin: 5% auto;
+    list-style: none;
+    font-size: 1.2em;
+    padding: 3%;
+    color: white;
+  }
+  aside h2 {
+    margin: 3%;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+  }
+  aside img {
+    margin: 3% auto;
+    width: 50%;
+    border-radius: 100px;
+    background-color: white;
+  }
+  aside .config {
+    padding: 5%;
+    font-size: 1.2em;
+    color: white;
+  }
+  aside .salir {
+    margin: 20% 0 0;
+  }
+  aside .salir a {
+    text-decoration: none;
+    color: #e84c34;
+  }
+  main .container img {
+    width: 55%;
+  }
+  main .lanzamiento img {
+    width: 65%;
+  }
+  main .perfiles .artista img {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1000px) {
+  p {
+    font-size: 1.5em;
+  }
+  aside img {
+    width: 35%;
+  }
+  aside li {
+    margin: 3% auto;
+  }
+  aside .salir {
+    margin: 15% auto;
+  }
+  main .container img {
+    width: 45%;
+  }
+  main .lanzamiento img {
+    width: 40%;
+  }
+  main .perfiles .artista img {
+    width: 45%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .contratos {
+    border: 0.5px solid black;
+  }
+}
+
+@media (min-width: 1400px) {
+  aside h2 {
+    font-size: 1.5em;
+  }
+  aside ul li, aside .salir {
+    font-size: 1.8em;
+  }
+  main p {
+    font-size: 1.8em;
+  }
+  main figcaption {
+    font-size: 1.2em;
+  }
+  main .app h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 2300px) {
+  aside h2, aside ul li {
+    font-size: 2.5em;
+  }
+  aside .config, aside .salir {
+    font-size: 2.5em;
+  }
+  main .buscador2 input[type=search] {
+    width: 80%;
+  }
+  main .buscador2 i {
+    font-size: 3em;
+  }
+  main p {
+    font-size: 3em;
+  }
+  main .masEscuchado .dos .container img {
+    width: 80%;
+  }
+  main .masEscuchado .dos .container figcaption {
+    font-size: 2em;
+  }
+  main .lanzamiento figcaption {
+    font-size: 2em;
+  }
+  main .generos .dos .container img {
+    width: 55%;
+  }
+  main .generos .dos .container figcaption {
+    font-size: 2em;
+  }
+  main .perfiles .artista figcaption {
+    font-size: 1.8em;
+  }
+  main .app h3 {
+    font-size: 2.3em;
+  }
+  footer .contratos h2 {
+    font-size: 2.5em;
+  }
+  footer .contratos h3 {
+    font-size: 2em;
+  }
+  footer .contratos h5 {
+    font-size: 1.7em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

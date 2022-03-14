@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/portada.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body a {
+  padding-top: 4%;
+  color: white;
+  text-decoration: none;
+}
+
+body .contenedor {
+  width: 300px;
+  height: 380px;
+  background-color: rgba(82, 82, 82, 0.87);
+  border-radius: 30px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+}
+
+body .contenedor img {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1% 0 3% 0;
+}
+
+body .contenedor h1 {
+  color: #ffff;
+  font-family: 'Scheherazade', serif;
+}
+
+body .contenedor label input[type=email],
+body .contenedor label input[type=password] {
+  border-radius: 50px;
+  padding: 1%;
+  margin-top: 2%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+body .contenedor a {
+  text-decoration: none;
+}
+
+body .contenedor a button {
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1%;
+  border-radius: 50px;
+  margin-top: 3%;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+}
+
+body .contenedor a button:hover, body .contenedor a button:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em white;
+          box-shadow: 0 0.5em 0.5em -0.4em white;
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+
+body .contenedor .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .contenedor .link h2 {
+  padding-top: 4%;
+  font-size: 1em;
+}
+
+body .contenedor .link h2 a {
+  color: #e84c34;
+  text-decoration: none;
+}
+
+body .contenedor h2 {
+  font-size: 1em;
+  padding-top: 2%;
+}
+
+body .contenedor h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .volver {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
